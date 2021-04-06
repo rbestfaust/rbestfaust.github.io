@@ -1,5 +1,5 @@
 body {
-	font-family: 'Arial', sans-serif;
+	font-family: 'Roboto', sans-serif;
 	font-size: 16px;
 	color: #333;
 }
@@ -21,7 +21,9 @@ table {
 	float: right;
 }
 
-
+table tr td:first-child {
+	padding-right: 5px;
+}
 
 a {
 	text-decoration: none;
@@ -31,18 +33,18 @@ a {
 }
 
 a:hover {
-	color: #17673b;
+	color: #1A6DBB;
 	transition: 0.3s;
 }
 
 ::-moz-selection {
 	color: white; 
-	background: #17673b;
+	background: #1A6DBB;
 }
 
 ::selection {
 	color: white; 
-	background: #17673b;
+	background: #1A6DBB;
 }
 
 .content {
@@ -62,19 +64,37 @@ a:hover {
 }
 
 .intro span.highlight {
-	background-color: #d68f4b;
+	background-color: #333;
 	color: white;
 }
 
 .intro span.highlight-red {
-	background-color: #17673b;
+	background-color: darkred;
 	color: white;
 	transition: 0.3s;
 }
 
 .intro span.highlight-red:hover {
-	background-color: blue;
+	background-color: red;
 	color: white;
 	transition: 0.3s;
 }
 
+@media (max-width: 360px) {
+	.intro {
+		margin: 50px 0 50px 0;
+	}
+	
+	.intro span {
+		font-size: 18px;
+		line-height: 28px;
+	}
+	
+	img{
+		display: none;
+	}
+	
+	table {
+		float: none;
+	}
+}
